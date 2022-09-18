@@ -1,0 +1,22 @@
+{
+  "name": "renovate-config",
+  "version": "1.0.0",
+  "description": "renovate config",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx renovate-config-validator"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/saku/renovate-config.git"
+  },
+  "author": "saku",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saku/renovate-config/issues"
+  },
+  "homepage": "https://github.com/saku/renovate-config#readme",
+  "dependencies": {
+    "renovate": "^32.198.1"
+  }
+}
