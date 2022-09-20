@@ -16,13 +16,11 @@
     },
     {
       "matchDepTypes": ["dependencies"],
-      "groupName": "dependencies",
-      "addLabels": ["dependencies"]
+      "groupName": "dependencies"
     },
     {
       "matchDepTypes": ["devDependencies"],
-      "groupName": "devDependencies",
-      "addLabels": ["devDependencies"]
+      "groupName": "devDependencies"
     },
     {
       "groupName": "linters",
