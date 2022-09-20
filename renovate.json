@@ -8,7 +8,7 @@
   "separateMultipleMajor": true,
   "packageRules": [
     {
-      "packagePatterns": ["*"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
       "major": {
         "automerge": false
