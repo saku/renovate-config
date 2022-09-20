@@ -1,2 +1,3 @@
-git config --local core.hooksPath githooks/pre-commit
+#!/bin/bash
 
+git config --local core.hooksPath githooks
