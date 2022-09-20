@@ -1,30 +1,35 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "timezone": "Asia/Tokyo",
-  "enabledManagers": [
-    "npm"
-  ],
-  "ignoreDeps": [
-    "@types/node",
-    "npm"
-  ],
+  "enabledManagers": ["npm"],
+  "ignoreDeps": ["@types/node", "npm"],
+  "labels": ["dependencies"],
   "schedule": "every weekend",
   "separateMultipleMajor": true,
   "packageRules": [
     {
-      "matchDepTypes": [
-        "dependencies"
-      ],
-      "groupName": "dependencies"
+      "packagePatterns": ["*"],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
     },
     {
-      "matchDepTypes": [
-        "devDependencies"
-      ],
-      "groupName": "devDependencies"
+      "matchDepTypes": ["dependencies"],
+      "groupName": "dependencies",
+      "addLabels": ["dependencies"]
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "groupName": "devDependencies",
+      "addLabels": ["devDependencies"]
+    },
+    {
+      "groupName": "linters",
+      "extends": ["packages:linters"],
+      "packageNames": ["prettier"],
+      "packagePatterns": ["^@typescript-eslint/"],
+      "addLabels": ["linters"]
     }
   ]
 }
-
