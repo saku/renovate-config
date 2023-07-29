@@ -21,10 +21,8 @@ But you want to merge automatically more, you can choise aggressive settings.
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>saku/renovate-config",
-    "github>saku/renovate-config:automerge/aggressive"
+    "github>saku/renovate-config//automerge/aggressive"
   ],
-  "ignorePresets": [
-    "github>saku/renovate-config:automerge/default"
-  ]
+  "ignorePresets": ["github>saku/renovate-config//automerge/default"]
 }
 ```
