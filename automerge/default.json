@@ -6,9 +6,10 @@
       "major": {
         "automerge": false
       }
+    },
+    {
+      "matchUpdateTypes": ["patch", "pin", "digest"],
+      "automerge": true
     }
-  ],
-  "pin": {
-    "automerge": true
-  }
+  ]
 }
