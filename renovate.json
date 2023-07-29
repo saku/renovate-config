@@ -1,5 +1,5 @@
 {
-  "extends": ["config:base"],
+  "extends": ["config:base", "github>saku/renovate-config:automerge"],
   "timezone": "Asia/Tokyo",
   "enabledManagers": ["npm"],
   "ignoreDeps": ["@types/node", "npm"],
@@ -7,13 +7,6 @@
   "schedule": "every weekend",
   "separateMultipleMajor": true,
   "packageRules": [
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true,
-      "major": {
-        "automerge": false
-      }
-    },
     {
       "matchDepTypes": ["dependencies"],
       "groupName": "dependencies"
