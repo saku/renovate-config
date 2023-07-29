@@ -1,5 +1,5 @@
 {
-  "extends": ["config:base", "github>saku/renovate-config:automerge"],
+  "extends": ["config:base", "github>saku/renovate-config:automerge/default"],
   "timezone": "Asia/Tokyo",
   "enabledManagers": ["npm"],
   "ignoreDeps": ["@types/node", "npm"],
