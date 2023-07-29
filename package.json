@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/saku/renovate-config#readme",
   "dependencies": {
-    "renovate": "36.25.3"
+    "renovate": "36.25.4"
   }
 }
